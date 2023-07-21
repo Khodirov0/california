@@ -1,0 +1,489 @@
+@import url(font.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.container {
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link {
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.active{
+    border-bottom: 1px solid black;
+}
+
+.nav__box {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* ----- */
+
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    width: 1294px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1235px;
+    left: 15px;
+    top: 50%;
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    background: rgba(220, 229, 226, 1);
+    border-radius: 30px;
+}
+
+
+.card__sohag-content {
+    max-width: 588px;
+    width: 100%;
+    padding: 0 50px;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.card__sohag-title {
+    font-family: 'ReadexPro';
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: 0em;
+
+
+}
+
+.txt {
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    padding: 30px 0;
+
+}
+
+.slider__box {
+    display: flex;
+}
+
+.card__sohag-link {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 1);
+    
+}
+
+.indecators {
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    left: 320px;
+
+}
+
+.slider__dots-item {
+    width: 194px;
+    height: 2px;
+    background: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.inner .active {
+    opacity: 1;
+}
+
+
+.active-li {
+    background: #000;
+}
+
+
+
+/* ------ */
+
+
+
+
+.shop {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.shop__box{
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.shop__title {
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 53px;
+    padding-bottom: 10px;
+}
+
+
+.shop__txt {
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 17px;
+    width: 628px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.shop__content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0;
+}
+
+.a{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.b{
+    grid-column: span 1;
+    grid-row: span 3;
+    display: grid;
+  align-items: center;
+}
+
+.c{
+    grid-column: span 2;
+    grid-row: span 1;
+    display: grid;
+    justify-content: center;
+}
+
+.shop__list{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 20px;
+}
+
+
+.shop__list-title {
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    width: 192px;
+
+}
+
+.shop__list-txt {
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+
+}
+
+/* Save */
+
+
+.save {
+    margin: 100px 0;
+    text-align: center;
+}
+
+
+.save__title {
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 53px;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 10px;
+}
+
+
+.save__txt {
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.save__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.save__box {
+    width: 300px;
+}
+
+.save__list {
+    text-align: left;
+    padding: 5px;
+}
+
+.save__box-title {
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.save__box-txt {
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(75, 75, 75, 1);
+    padding: 5px 0;
+}
+
+.save__box-price {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 15px;
+
+}
+
+
+/* ------ */
+
+.see {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.see__title {
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 53px;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 10px;
+}
+
+
+.see__txt {
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.see__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.see__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(248, 249, 250, 1);
+    border-radius: 16px;
+    padding-top: 50px;
+    width: 413px;
+}
+
+.link {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 30px 0 40px 0;
+}
+
+.see__box-txt {
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.see__box-title {
+    font-family: 'Readex Pro';
+    font-size: 28px;
+
+    line-height: 35px;
+
+}
+
+
+/* ----- */
+
+.idea {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.idea__title {
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 53px;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 10px;
+}
+
+
+.idea__txt {
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.idea__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+   
+}
+
+.idea__content-txt{
+    font-family: 'Inter';
+font-size: 26px;
+line-height: 30px;
+text-align: start;
+
+}
+
+
+/* ----- */
+.footer{
+     background: rgba(248, 249, 250, 1);
+}
+.footer__content{
+padding: 30px 0 50px 0;
+display: flex;
+align-items: center;
+gap: 150px;
+flex-wrap: wrap;
+}
+
+
+.footer__box{
+    width: 304px
+}
+
+.footer__box-txt{
+    font-family: 'Inter';
+font-size: 16px;
+line-height: 19px;
+}
+.footer__txt{
+    font-family: 'Inter';
+font-size: 16px;
+line-height: 30px;
+}
+
+.footer__lists{
+    display: flex;
+    align-items: start;
+   gap: 150px;
+
+   flex-wrap: wrap;
+}
+
+.footer__title{
+    font-family: 'Readex Pro';
+font-size: 22px;
+line-height: 28px;
+}
+
+/* ---- */
+
+.delay-1s {
+    animation-delay: 0s;
+}
+
+.delay-2s {
+    animation-delay: 0.2s;
+}
+
+.delay-3s {
+    animation-delay: 0.4s;
+}
+
+.delay-4s {
+    animation-delay: 0.6s;
+}
+
